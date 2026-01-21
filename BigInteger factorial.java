@@ -32,12 +32,13 @@ public class Exercise18_01 {
      */
     public static BigInteger factorial(BigInteger n) {
         // TODO: Implement base case
-        
+        if (n.equals(BigInteger.ZERO)) {
+            return BigInteger.ONE;
+        }
         
         // TODO: Implement recursive case
+        return n.multiply(factorial(n.subtract(BigInteger.ONE)));
         
-        
-        return null; // Remove this when you implement the method
     }
     
     public static void main(String[] args) {

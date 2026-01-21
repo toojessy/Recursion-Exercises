@@ -30,12 +30,13 @@ public class Exercise18_02 {
      */
     public static int gcd(int m, int n) {
         // TODO: Implement base case
-        
+        if (n == 0) {
+            return m;
+        }
         
         // TODO: Implement recursive case
+        return gcd (n, m % n);
         
-        
-        return 0; // Remove this when you implement the method
     }
     
     public static void main(String[] args) {
